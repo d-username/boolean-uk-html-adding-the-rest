@@ -18,7 +18,7 @@ body {
     background-color: rgb(204, 236, 204)
 }
 
-/* MAIN BLOCKS */
+/* HEADER */
 .header {
     grid-area: header;
     display: grid;
@@ -30,26 +30,13 @@ body {
     grid-template-columns: repeat(5, 1fr);
 }
 
+/* LEFT-SIDE-BOXES */
 .left-side {
     grid-area: left-side;
     display: grid;
     grid-template-rows: 300px 110px 100px;
 }
 
-.main {
-    grid-area: main;
-    display: grid;
-    grid-template-rows: 100px 1fr;
-    overflow: scroll;
-}
-
-.right-side {
-    grid-area: right-side;
-    display: grid;
-    grid-template-rows: 280px 120px 90px;
-}
-
-/* LEFT-SIDE-BOXES */
 .status {
     display: grid;
     grid-auto-flow: 1fr 1fr;
@@ -60,23 +47,43 @@ body {
     grid-template-rows: 1fr repeat(3, 50px);
 }
 
-
-
-/* MAIN SETUP */
+/* MAIN */
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    overflow: scroll;
+}
 
 .content .green-box {
     height: 300px;
 }
 
+.top-status-bar {
+    display: grid;
+    grid-template-columns: 35px 1fr;
+}
+
+.bottom-status-bar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.round-box {
+    border-radius: 100px;
+}
 
 /* RIGHT-SIDE-BOXES */
+.right-side {
+    grid-area: right-side;
+    display: grid;
+    grid-template-rows: 280px 120px 90px;
+}
+
 .top-block {
     display: grid;
     grid-template-rows: repeat(5, 1fr);
 }
-
-
-
 
 /* BORDER COLOURS */
 .green-box {
@@ -90,7 +97,7 @@ body {
     background-color: white;
 }
 
-
-
-
-
+.red-box{
+    border: 3px red solid;
+    margin: 5px;
+}
