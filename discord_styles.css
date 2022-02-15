@@ -1,3 +1,46 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto 200px 1fr;
+    height: 100vh;
+}
+
+
+.left-header {
+    display: grid;
+
+
+}
+
+.left-header-list {
+    padding: 0px;
+
+}
+
+.left-side {
+    display: grid;
+    grid-template-rows: 50px 200px 1fr 50px;
+}
+
+
+.left-side-boxes {
+    border: 1px dashed turquoise;
+    
+}
+
+.grid-column {
+    border: 1px dashed orange;
+}
+
+.list-items {
+    border: 1px dashed blue;
+    list-style: none;
+    height: 45px;
+    width: 45px;
+    margin: 5px;
 }

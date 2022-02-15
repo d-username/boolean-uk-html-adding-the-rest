@@ -11,18 +11,19 @@ body {
 .container {
     display: grid;
     grid-template: 
-            "header header header" 50px
-            "left-side main right-side" 1fr / 
-            150px 1fr 150px;
+            "header header header header header" auto
+            ". left-side main right-side ." 1fr / 
+            1fr 150px 500px 150px 1fr;
     grid-gap: 10px;
-    background-color: rgb(204, 236, 204)
+    background-color: rgb(255, 242, 185)
 }
 
 /* HEADER */
 .header {
     grid-area: header;
     display: grid;
-    grid-template-columns: 50px 1fr 200px;
+    grid-template-columns: 60px 1fr auto;
+    background-color: white;
 }
 
 .nav-bar {
@@ -30,16 +31,17 @@ body {
     grid-template-columns: repeat(5, 1fr);
 }
 
+
+.header-icons {
+    width: 35px;
+    height: 35px;
+}
+
 /* LEFT-SIDE-BOXES */
 .left-side {
     grid-area: left-side;
     display: grid;
     grid-template-rows: 300px 110px 100px;
-}
-
-.status {
-    display: grid;
-    grid-auto-flow: 1fr 1fr;
 }
 
 .profile-list{
@@ -51,7 +53,7 @@ body {
 .main {
     grid-area: main;
     display: grid;
-    grid-template-rows: 100px 1fr;
+    grid-template-rows: auto 1fr;
     overflow: scroll;
 }
 
@@ -59,18 +61,27 @@ body {
     height: 300px;
 }
 
+.status {
+    display: grid;
+    grid-auto-flow: 1fr 1fr;
+}
+
+
 .top-status-bar {
     display: grid;
-    grid-template-columns: 35px 1fr;
+    grid-template-columns: auto 1fr;
 }
 
 .bottom-status-bar {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    height: 45px;
 }
 
 .round-box {
     border-radius: 100px;
+    width: 45px;
+    height: 45px;
 }
 
 /* RIGHT-SIDE-BOXES */
@@ -87,17 +98,17 @@ body {
 
 /* BORDER COLOURS */
 .green-box {
-    border: 3px green solid;
+    border: 1px green dashed;
     margin: 5px;
 }
 
 .blue-box {
-    border: 3px blue solid;
+    border: 1px blue dashed;
     margin: 5px;
     background-color: white;
 }
 
 .red-box{
-    border: 3px red solid;
+    border: 1px red dashed;
     margin: 5px;
 }
