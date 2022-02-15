@@ -30,7 +30,49 @@
 
 .left-side-boxes {
     border: 1px dashed turquoise;
+}
+
+.header-box {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
     
+}
+.profile-box {
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+.image {
+    width: 60px;
+
+}
+
+.folders {
+    border: 1px red solid;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.icon {
+    background-color: rgb(141, 194, 141);
+    width: 28px;
+    height: 28px;
+    margin: 5px;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    place-items: center;
 }
 
 .grid-column {
@@ -43,4 +85,39 @@
     height: 45px;
     width: 45px;
     margin: 5px;
+}
+
+.main {
+    display: grid;
+    grid-template-rows: 50px 1fr 50px;
+
+}
+
+.main-box {
+    border: 1px dashed red;
+}
+
+.top-bar {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.title {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: left;
+    align-items: center;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    justify-content: right;
+    align-items: center;
+}
+
+.box {
+    border: 1px dashed blue;
+    margin: 5px;
+
 }
